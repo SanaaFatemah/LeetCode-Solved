@@ -1,5 +1,7 @@
 class Solution {
     public void setZeroes(int[][] matrix) {
+        //Using 2 single dimension arrays to record where the 0's are placed. 
+        //once they are recorded, will traverse the array again to mark them those recorded rows and cols as 0
         int [] row = new int[matrix.length];
         int [] col = new int[matrix[0].length];
         Arrays.fill(row, 0);
