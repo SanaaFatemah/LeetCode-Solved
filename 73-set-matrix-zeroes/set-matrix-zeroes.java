@@ -2,8 +2,8 @@ class Solution {
     public void setZeroes(int[][] matrix) {
         int [] row = new int[matrix.length];
         int [] col = new int[matrix[0].length];
-        Arrays.fill(row, 0);
-        Arrays.fill(col, 0);
+        //Arrays.fill(row, 0);
+        //Arrays.fill(col, 0);
 
         for (int i=0;i<matrix.length; i++)
         {
