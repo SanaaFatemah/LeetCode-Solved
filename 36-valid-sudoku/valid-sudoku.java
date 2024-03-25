@@ -7,9 +7,9 @@ class Solution {
             //The calculation i % 3 determines the column block within which the current row belongs, 
             //and then multiplying it by 3 gives the starting column index of that block.
             int ColIndex = 3*(i%3);
-        HashSet<Character> rows = new HashSet<Character>();
-        HashSet<Character> columns = new HashSet<Character>();
-        HashSet<Character> cube = new HashSet<Character>();
+        Set<Character> rows = new HashSet<Character>();
+        Set<Character> columns = new HashSet<Character>();
+        Set<Character> cube = new HashSet<Character>();
         for (int j = 0; j < 9;j++){
             if(board[i][j]!='.' && !rows.add(board[i][j]))
                 return false;
