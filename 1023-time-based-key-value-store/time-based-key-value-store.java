@@ -27,6 +27,7 @@ class TimeMap {
         int r = data.size() - 1;
 
         while (l < r) {
+            //inorder to avoid getting stuck in an infinite loop
             int mid = (l + r + 1) / 2;
 
             if (data.get(mid).timeStamp <= timeStamp) {
