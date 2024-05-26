@@ -1,6 +1,6 @@
 class Solution {
     public String largestNumber(int[] nums) {
-
+        if (nums == null || nums.length == 0) return "";
         String [] s = new String[nums.length];
         for(int i =0;i < nums.length;i++)
         {
