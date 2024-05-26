@@ -31,7 +31,6 @@ class Solution {
         int rh = Math.max(0,findSum(root.right, max));
         //System.out.println(Math.max(max[0], root.val+lh+rh)+ " " +root.val + " " + lh + " " + rh);
         max[0] = Math.max(max[0], root.val+lh+rh);
-        System.out.println(max[0]+ " " +(root.val+lh+rh));
         return root.val + Math.max(lh, rh);
     }
 }
