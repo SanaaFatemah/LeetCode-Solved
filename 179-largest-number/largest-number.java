@@ -5,6 +5,7 @@ public class Solution {
         for (int i = 0; i < nums.length; i++) {
             strs[i] = nums[i]+"";
         }
+        //Compares the string lexographically and transitive comparison takes place.
         Arrays.sort(strs, new Comparator<String>() {
             @Override
             public int compare(String i, String j) {
