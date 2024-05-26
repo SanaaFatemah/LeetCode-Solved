@@ -15,7 +15,7 @@ class Solution {
             for(int j =0;j<len;j++)
             {
                 //map[[s.charAt(j)-'A']]-> indicates against which character the count has to go against
-                //[j] -> against which rank the count should be increased
+                //[j] -> for which rank the count should be increased
                 map[s.charAt(j)-'A'][j]++;
             }
 
