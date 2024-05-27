@@ -6,10 +6,10 @@ class Solution {
         
         while (low<=high)
         {
-            if (nums[low] == target )
-            {
-                return low;
-            }
+            // if (nums[low] == target )
+            // {
+            //     return low;
+            // }
             int mid  = low + (high-low)/2;
 
             if (nums[mid] == target )
