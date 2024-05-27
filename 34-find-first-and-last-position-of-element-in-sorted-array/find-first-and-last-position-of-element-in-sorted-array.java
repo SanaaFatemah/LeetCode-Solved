@@ -13,7 +13,7 @@ private int findFirst(int[] nums, int target){
     int end = nums.length - 1;
     while(start <= end){
         int mid = (start + end) / 2;
-        System.out.println(mid);
+        //System.out.println(mid);
         //Trying to find the first index, so we are trying to push mid to the left
         if(nums[mid] >= target){
             end = mid - 1;
