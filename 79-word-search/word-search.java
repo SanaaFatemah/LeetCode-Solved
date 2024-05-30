@@ -24,8 +24,7 @@ class Solution {
         if (idx == word.length())
             return true;
         if(i >= board.length || i < 0 || j >= board[i].length || j < 0||board[i][j] == '#') return false;
-        //if (i < 0 || j < 0 || i == m || j == n || board[i][j] == '#')
-            //return false;
+        
         // logic
         if (board[i][j] == word.charAt(idx)) {
 
