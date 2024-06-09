@@ -9,8 +9,7 @@ class Solution {
     {
         if(start==nums.length){
              result.add(new ArrayList<>(output));
-             //System.out.println("res "+result+" out "+output+" start "+start);
-            return;
+             return;
         }
             output.add(nums[start]);
             helper(result,output,nums,start+1);
