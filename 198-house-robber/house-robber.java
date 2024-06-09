@@ -1,6 +1,7 @@
 class Solution {
     public int rob(int[] nums) {
 
+        //Tabulation
         int n = nums.length;
         int prev = nums[0];
         int prev2 = 0;
