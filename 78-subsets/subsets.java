@@ -13,7 +13,7 @@ class Solution {
         }
             output.add(nums[start]);
             helper(result,output,nums,start+1);
-            System.out.println("res "+result+" out "+output+" start "+start);
+            //System.out.println("res "+result+" out "+output+" start "+start);
             output.remove(output.size()-1);
             helper(result,output,nums,start+1);
   
