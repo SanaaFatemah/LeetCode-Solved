@@ -17,29 +17,27 @@ class Solution {
     public int kthSmallest(TreeNode root, int k) {
 
         int [] counter = new int[]{0};
-        int [] kthSmallest = new int[]{0};
-
-        findkthSmallest(root, k, counter, kthSmallest);
-
-        return kthSmallest[0];
+        int [] kth = new int[]{0};
+        helper(root, kth, counter, k);
+        return kth[0];
         
     }
 
-    public void findkthSmallest(TreeNode root, int k, int [] counter, int [] kthSmallest)
+    public void helper(TreeNode root, int [] kth,int [] counter, int k )
     {
-        if(root ==null) return;
+        if(root == null) return;
 
-        findkthSmallest(root.left, k, counter, kthSmallest);
-
+        helper(root.left, kth, counter, k);
         counter[0]++;
 
         if(counter[0] == k)
         {
-            kthSmallest[0] = root.val;
+            kth[0] = root.val;
+
             return;
         }
         
-        findkthSmallest(root.right, k, counter, kthSmallest);
-
+        helper(root.right, kth, counter, k);
+        //return 0;
     }
 }
