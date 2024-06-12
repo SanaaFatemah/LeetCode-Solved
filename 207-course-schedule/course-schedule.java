@@ -25,7 +25,6 @@ class Solution {
         while (!queue.isEmpty()) {
             int curr = queue.poll();
             List<Integer> children = map.get(curr);
-            //children = map.get(curr);
             if (children != null) {
                 for (int child : children) {
                     inDeg[child]--;
