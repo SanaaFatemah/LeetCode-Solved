@@ -13,6 +13,7 @@
  *     }
  * }
  */
+ //DFS solution
 class Solution {
     boolean flag;
     public boolean isSymmetric(TreeNode root) {
