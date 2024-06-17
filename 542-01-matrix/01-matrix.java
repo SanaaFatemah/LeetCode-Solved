@@ -29,7 +29,6 @@ class Solution {
            int size = queue.size();
             for(int i=0;i<size;i++)
             {   
-                System.out.println(queue.size() + "dist "+ dist);
                 int [] curr = queue.poll();
 
                 for(int [] dir:dirs)
@@ -39,14 +38,10 @@ class Solution {
                     
                     if(nr >=0 && nc >=0 && nr < m && nc < n && mat[nr][nc] == -1)
                     {
-                        System.out.println("Curr "+curr[0] +" " + curr[1]);
-                        System.out.println(nr +" " + nc);
-                        System.out.println(mat[nr][nc]);
-                        //System.out.println("dist " + dist);
                         mat[nr][nc] = dist;
                         queue.add(new int []{nr,nc});
                     }
-                    //}
+                    
                 }
             }
             dist++;
