@@ -17,6 +17,7 @@ public class Codec {
 
         queue.add(root);
         
+        //Adding the nodes in a bfs manner
         while(!queue.isEmpty())
         {
             TreeNode curr = queue.poll();
@@ -28,7 +29,7 @@ public class Codec {
             }
             else
             {
-                sb.append('#');
+                sb.append("#");
             }
             sb.append(",");
         }
