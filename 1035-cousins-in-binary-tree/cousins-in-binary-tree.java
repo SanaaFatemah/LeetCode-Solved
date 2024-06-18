@@ -29,17 +29,19 @@ class Solution {
         if(root == null) return;
 
         //Logic
+        
+        //else 
+        dfs(root.left, x, y, depth+1, root);
         if(x == root.val)
         {
             xDepth = depth;
             xParent = parent;
         }
-        else if(y == root.val)
+        dfs(root.right, x, y, depth+1, root);
+        if(y == root.val)
         {
             yDepth = depth;
             yParent = parent;
         }
-        dfs(root.left, x, y, depth+1, root);
-        dfs(root.right, x, y, depth+1, root);
     }
 }
