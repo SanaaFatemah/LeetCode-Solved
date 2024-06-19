@@ -49,7 +49,7 @@ class Solution {
     {
         for(int i=0; i<r; i++)
         {
-            System.out.println(i +" "+ c);
+            //System.out.println(i +" "+ c);
             if(board[i][c]) return false;
         }
             
