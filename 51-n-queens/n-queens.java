@@ -39,7 +39,9 @@ class Solution {
                 board[i][j] = true;
 
                 backTrack(board, i+1);
-
+                //Once all the column values of the row are explored, the function execution for that function call for that 
+                //i values finishes and stack.pop happens where the previous rows's call pops out and we backtrack that row's queen placement
+                //because placing the queen there can't make it possible to place a queen in the below row.
                 board[i][j] = false;
             }
         }
